@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="FfA-iq-aQ2">
+    <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <scenes>
+        <!--Tests-->
+        <scene sceneID="h36-EA-uVG">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="FfA-iq-aQ2" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tests" id="Rcr-5c-MAe"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7LZ-Ua-16i">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="WEE-F7-cb4">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="UAm-US-Er2" kind="relationship" relationship="rootViewController" id="cfa-Sd-na8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gx-mk-Oa8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="-59"/>
+        </scene>
+        <!--Grade Calculator-->
+        <scene sceneID="Sqs-WE-P26">
+            <objects>
+                <viewController id="UAm-US-Er2" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Kh6-I9-juy"/>
+                        <viewControllerLayoutGuide type="bottom" id="bt4-Nn-zSh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="74y-rg-kTa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a72-e2-Z1a">
+                                <rect key="frame" x="159" y="84" width="2" height="464"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="2" id="TNt-gE-5ge"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ga-wn-eTY">
+                                <rect key="frame" x="20" y="84" width="280" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="VvJ-Op-9a1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pye-N1-zF5">
+                                <rect key="frame" x="20" y="86" width="280" height="152"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="26E-se-4sp">
+                                        <rect key="frame" x="20" y="26" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="m4n-xJ-daN"/>
+                                            <constraint firstAttribute="height" constant="100" id="tVb-0P-eLI"/>
+                                        </constraints>
+                                        <state key="normal" image="weighted assignment"/>
+                                        <connections>
+                                            <segue destination="aKN-76-Erd" kind="push" identifier="Weighted Assignment" id="5YQ-m8-X1b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SI6-Wm-D5E">
+                                        <rect key="frame" x="160" y="26" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="6zk-ga-3Zi"/>
+                                            <constraint firstAttribute="width" constant="100" id="ULI-mj-mwC"/>
+                                        </constraints>
+                                        <state key="normal" image="unweighted assignment"/>
+                                        <connections>
+                                            <segue destination="wjr-Bf-X0n" kind="push" identifier="Unweighted Assignment" id="ksz-Kp-bDh"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="26E-se-4sp" secondAttribute="centerY" id="kQa-Ww-ZLB"/>
+                                    <constraint firstItem="26E-se-4sp" firstAttribute="leading" secondItem="pye-N1-zF5" secondAttribute="leading" constant="20" id="pB7-JP-KNe"/>
+                                    <constraint firstAttribute="trailing" secondItem="SI6-Wm-D5E" secondAttribute="trailing" constant="20" id="udE-dz-gTT"/>
+                                    <constraint firstAttribute="centerY" secondItem="SI6-Wm-D5E" secondAttribute="centerY" id="xlz-6E-Ppx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mag-pN-yVG">
+                                <rect key="frame" x="20" y="238" width="280" height="2"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="bXV-3q-LYo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xId-1h-hVw">
+                                <rect key="frame" x="20" y="240" width="280" height="152"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gky-sQ-n9Q">
+                                        <rect key="frame" x="20" y="26" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="boA-1d-dp8"/>
+                                            <constraint firstAttribute="height" constant="100" id="eLn-cR-yI3"/>
+                                        </constraints>
+                                        <state key="normal" image="calculate final weight"/>
+                                        <connections>
+                                            <segue destination="Kaj-tr-nMt" kind="push" identifier="Calculate Final Weightage" id="J7O-Fk-XKn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iOV-wh-P8G">
+                                        <rect key="frame" x="160" y="26" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="8KH-ld-ByZ"/>
+                                            <constraint firstAttribute="height" constant="100" id="gGQ-XS-qGM"/>
+                                        </constraints>
+                                        <state key="normal" image="weighted final"/>
+                                        <connections>
+                                            <segue destination="dSb-Tt-TqP" kind="push" identifier="Weighted Final Exam" id="aoH-9z-S5t"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="gky-sQ-n9Q" secondAttribute="centerY" id="7ty-rH-tjC"/>
+                                    <constraint firstAttribute="trailing" secondItem="iOV-wh-P8G" secondAttribute="trailing" constant="20" id="gKf-0n-fmw"/>
+                                    <constraint firstItem="gky-sQ-n9Q" firstAttribute="leading" secondItem="xId-1h-hVw" secondAttribute="leading" constant="20" id="j2y-WC-HXR"/>
+                                    <constraint firstAttribute="centerY" secondItem="iOV-wh-P8G" secondAttribute="centerY" id="jqJ-aU-fzH"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wH0-bt-jaH">
+                                <rect key="frame" x="20" y="392" width="280" height="2"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="Ekl-z1-hT2"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X8G-Jp-cdq">
+                                <rect key="frame" x="20" y="394" width="280" height="152"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHI-9H-0qW">
+                                        <rect key="frame" x="20" y="26" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="gA2-GV-4b5"/>
+                                            <constraint firstAttribute="height" constant="100" id="rib-kM-Mzf"/>
+                                        </constraints>
+                                        <state key="normal" image="multipart final"/>
+                                        <connections>
+                                            <segue destination="YNO-ys-Gvx" kind="push" identifier="Multi-part weighted final" id="yaI-hg-zjf"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6vx-dS-72l">
+                                        <rect key="frame" x="160" y="26" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="G1H-F3-Sp1"/>
+                                            <constraint firstAttribute="height" constant="100" id="tcj-QH-uyr"/>
+                                        </constraints>
+                                        <state key="normal" image="postfinal grade"/>
+                                        <connections>
+                                            <segue destination="dO5-Cy-GbR" kind="push" identifier="Grade after weighted final" id="cN5-ad-2C7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HHI-9H-0qW" firstAttribute="leading" secondItem="X8G-Jp-cdq" secondAttribute="leading" constant="20" id="CCz-0I-SwP"/>
+                                    <constraint firstAttribute="centerY" secondItem="6vx-dS-72l" secondAttribute="centerY" id="H7U-RD-mOc"/>
+                                    <constraint firstAttribute="trailing" secondItem="6vx-dS-72l" secondAttribute="trailing" constant="20" id="Sc3-WS-qGI"/>
+                                    <constraint firstAttribute="centerY" secondItem="HHI-9H-0qW" secondAttribute="centerY" id="TTd-XM-Sgp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6uE-Oc-7Wa">
+                                <rect key="frame" x="20" y="546" width="280" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="ozF-D2-Ne6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="pye-N1-zF5" secondAttribute="trailing" constant="20" id="03C-0s-KWA"/>
+                            <constraint firstItem="pye-N1-zF5" firstAttribute="leading" secondItem="74y-rg-kTa" secondAttribute="leading" constant="20" id="0FR-Fh-sU9"/>
+                            <constraint firstAttribute="trailing" secondItem="xId-1h-hVw" secondAttribute="trailing" constant="20" id="6VD-Bb-WlX"/>
+                            <constraint firstItem="wH0-bt-jaH" firstAttribute="top" secondItem="xId-1h-hVw" secondAttribute="bottom" id="8LM-3z-K7N"/>
+                            <constraint firstAttribute="trailing" secondItem="7Ga-wn-eTY" secondAttribute="trailing" constant="20" id="AgH-Xw-cFx"/>
+                            <constraint firstItem="X8G-Jp-cdq" firstAttribute="leading" secondItem="74y-rg-kTa" secondAttribute="leading" constant="20" id="B5f-1k-QmS"/>
+                            <constraint firstItem="pye-N1-zF5" firstAttribute="top" secondItem="7Ga-wn-eTY" secondAttribute="bottom" id="BlR-ax-hJ7"/>
+                            <constraint firstItem="xId-1h-hVw" firstAttribute="top" secondItem="Mag-pN-yVG" secondAttribute="bottom" id="CEw-LT-VMS"/>
+                            <constraint firstItem="bt4-Nn-zSh" firstAttribute="top" secondItem="a72-e2-Z1a" secondAttribute="bottom" constant="20" id="Dit-7H-eBw"/>
+                            <constraint firstItem="X8G-Jp-cdq" firstAttribute="top" secondItem="wH0-bt-jaH" secondAttribute="bottom" id="Ej0-g4-OT8"/>
+                            <constraint firstAttribute="trailing" secondItem="wH0-bt-jaH" secondAttribute="trailing" constant="20" id="H7o-qG-3pj"/>
+                            <constraint firstItem="6uE-Oc-7Wa" firstAttribute="leading" secondItem="74y-rg-kTa" secondAttribute="leading" constant="20" id="HqR-5V-O6f"/>
+                            <constraint firstItem="7Ga-wn-eTY" firstAttribute="leading" secondItem="74y-rg-kTa" secondAttribute="leading" constant="20" id="JqI-nY-6tT"/>
+                            <constraint firstItem="7Ga-wn-eTY" firstAttribute="top" secondItem="Kh6-I9-juy" secondAttribute="bottom" constant="20" id="Lke-fa-lkV"/>
+                            <constraint firstItem="pye-N1-zF5" firstAttribute="height" secondItem="X8G-Jp-cdq" secondAttribute="height" id="LuK-sq-XSk"/>
+                            <constraint firstAttribute="trailing" secondItem="X8G-Jp-cdq" secondAttribute="trailing" constant="20" id="WCH-LE-ecu"/>
+                            <constraint firstItem="xId-1h-hVw" firstAttribute="leading" secondItem="74y-rg-kTa" secondAttribute="leading" constant="20" id="Wdx-jM-rwG"/>
+                            <constraint firstItem="a72-e2-Z1a" firstAttribute="top" secondItem="Kh6-I9-juy" secondAttribute="bottom" constant="20" id="XA6-T4-OM9"/>
+                            <constraint firstItem="6uE-Oc-7Wa" firstAttribute="top" secondItem="X8G-Jp-cdq" secondAttribute="bottom" id="XRm-bB-0BD"/>
+                            <constraint firstItem="wH0-bt-jaH" firstAttribute="leading" secondItem="74y-rg-kTa" secondAttribute="leading" constant="20" id="ddH-hW-JRc"/>
+                            <constraint firstItem="Mag-pN-yVG" firstAttribute="leading" secondItem="74y-rg-kTa" secondAttribute="leading" constant="20" id="eP8-1j-fpD"/>
+                            <constraint firstItem="pye-N1-zF5" firstAttribute="width" secondItem="X8G-Jp-cdq" secondAttribute="width" id="fH7-9e-cLH"/>
+                            <constraint firstItem="Mag-pN-yVG" firstAttribute="top" secondItem="pye-N1-zF5" secondAttribute="bottom" id="iKK-Pu-Dft"/>
+                            <constraint firstAttribute="centerX" secondItem="a72-e2-Z1a" secondAttribute="centerX" id="m11-op-pim"/>
+                            <constraint firstItem="bt4-Nn-zSh" firstAttribute="top" secondItem="6uE-Oc-7Wa" secondAttribute="bottom" constant="20" id="ncB-H6-nXW"/>
+                            <constraint firstAttribute="trailing" secondItem="6uE-Oc-7Wa" secondAttribute="trailing" constant="20" id="nvd-Te-Org"/>
+                            <constraint firstItem="pye-N1-zF5" firstAttribute="width" secondItem="xId-1h-hVw" secondAttribute="width" id="wn6-HO-Cxl"/>
+                            <constraint firstAttribute="trailing" secondItem="Mag-pN-yVG" secondAttribute="trailing" constant="20" id="wpl-mG-tPn"/>
+                            <constraint firstItem="pye-N1-zF5" firstAttribute="height" secondItem="xId-1h-hVw" secondAttribute="height" id="y7N-m6-Jch"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Grade Calculator" id="l4S-8W-Dvm">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="MO4-Vo-fmt"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="22A-zY-alZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="820" y="-59"/>
+        </scene>
+        <!--Weighted Item-->
+        <scene sceneID="eRI-uO-akV">
+            <objects>
+                <viewController id="aKN-76-Erd" customClass="GCWeightedAssignmentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iHX-nB-8c0"/>
+                        <viewControllerLayoutGuide type="bottom" id="c2W-Zm-V4e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1tM-m3-Ghv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Weighted Item" id="9va-fp-9pu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BuJ-Rp-SCh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="-1892"/>
+        </scene>
+        <!--Unweighted Item-->
+        <scene sceneID="nsQ-Hq-cFa">
+            <objects>
+                <viewController id="wjr-Bf-X0n" customClass="GCUnweightedAssignmentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zip-xg-cfb"/>
+                        <viewControllerLayoutGuide type="bottom" id="vD9-AZ-lVc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ije-g1-OpA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Unweighted Item" id="gaf-JB-VCn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ePg-VW-KQh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="-1218"/>
+        </scene>
+        <!--Calculate Final Weight-->
+        <scene sceneID="A5V-Tu-kiT">
+            <objects>
+                <viewController id="Kaj-tr-nMt" customClass="GCCalcFinalWeightViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yYn-Mg-48d"/>
+                        <viewControllerLayoutGuide type="bottom" id="7gS-oh-Dfc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lNm-yM-pMP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Calculate Final Weight" id="8kB-4W-OTz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iby-86-Qfi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="-544"/>
+        </scene>
+        <!--Weighted Final Exam-->
+        <scene sceneID="3JM-1b-6Jj">
+            <objects>
+                <viewController id="dSb-Tt-TqP" customClass="GCWeightedFinalExamViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oqc-W8-fIx"/>
+                        <viewControllerLayoutGuide type="bottom" id="HlV-S9-SKF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bWs-uU-Oer">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Weighted Final Exam" id="948-Pj-K05"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ke-ts-rmA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="140"/>
+        </scene>
+        <!--Multi-Part Weighted Final-->
+        <scene sceneID="TvO-0u-IUj">
+            <objects>
+                <viewController id="YNO-ys-Gvx" customClass="GCMultipartfinalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Hi-ry-2Qu"/>
+                        <viewControllerLayoutGuide type="bottom" id="LkS-PY-Vhs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rVO-ct-W11">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Multi-Part Weighted Final" id="yXF-89-4Ot"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cq8-dc-yld" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="814"/>
+        </scene>
+        <!--Post-Final Exam Grade-->
+        <scene sceneID="fIo-0z-TKu">
+            <objects>
+                <viewController id="dO5-Cy-GbR" customClass="GCPostFinalGradeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DqJ-P6-0sb"/>
+                        <viewControllerLayoutGuide type="bottom" id="gAB-Ar-TNY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wOf-gW-wrT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Post-Final Exam Grade" id="Nlt-ET-5lt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCu-I5-zVT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1362" y="1488"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="calculate final weight" width="100" height="100"/>
+        <image name="multipart final" width="100" height="100"/>
+        <image name="postfinal grade" width="100" height="100"/>
+        <image name="unweighted assignment" width="100" height="100"/>
+        <image name="weighted assignment" width="100" height="100"/>
+        <image name="weighted final" width="100" height="100"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

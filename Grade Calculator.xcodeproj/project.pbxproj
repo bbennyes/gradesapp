@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3149DBA01957FDAF0029B331 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3149DB9F1957FDAF0029B331 /* Settings.bundle */; };
+		319DFF1519C6C54100EB1F4F /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 319DFF1419C6C54100EB1F4F /* Crashlytics.framework */; };
+		31BB59AF19492AC20085B7A7 /* GCWeightedFinalExamForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB59AE19492AC20085B7A7 /* GCWeightedFinalExamForm.m */; };
+		31BB59B4194935A70085B7A7 /* CustomButtonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB59B2194935A70085B7A7 /* CustomButtonCell.m */; };
+		31BB59B5194935A70085B7A7 /* CustomButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 31BB59B3194935A70085B7A7 /* CustomButtonCell.xib */; };
+		31BB59B9194936390085B7A7 /* GCWeightedFinalExamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB59B8194936390085B7A7 /* GCWeightedFinalExamViewController.m */; };
+		31BB59BD194940B00085B7A7 /* GCWeightedAssignmentForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB59BC194940B00085B7A7 /* GCWeightedAssignmentForm.m */; };
+		31BB59C1194942C10085B7A7 /* GCWeightedAssignmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB59C0194942C10085B7A7 /* GCWeightedAssignmentViewController.m */; };
+		31BB59C5194956060085B7A7 /* GCUnweightedAssignmentForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB59C4194956060085B7A7 /* GCUnweightedAssignmentForm.m */; };
+		31BB59C8194957920085B7A7 /* GCUnweightedAssignmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB59C7194957920085B7A7 /* GCUnweightedAssignmentViewController.m */; };
+		31BB59CE194B7A4B0085B7A7 /* GCCalcFinalWeightForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB59CD194B7A4B0085B7A7 /* GCCalcFinalWeightForm.m */; };
+		31BB59D2194B7AE80085B7A7 /* GCCalcFinalWeightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB59D1194B7AE80085B7A7 /* GCCalcFinalWeightViewController.m */; };
+		31BB59DB194BC1AF0085B7A7 /* GCUserGradeAfterFinalForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB59DA194BC1AF0085B7A7 /* GCUserGradeAfterFinalForm.m */; };
+		31BB59E0194BC3040085B7A7 /* GCPostFinalGradeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB59DF194BC3040085B7A7 /* GCPostFinalGradeViewController.m */; };
+		31BB59E4194C257C0085B7A7 /* GCMultipartFinalForm.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB59E3194C257C0085B7A7 /* GCMultipartFinalForm.m */; };
+		31BB59E8194CD6310085B7A7 /* GCMultipartfinalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31BB59E7194CD6310085B7A7 /* GCMultipartfinalViewController.m */; };
+		31D08E42194517C800780B0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D08E41194517C800780B0D /* Foundation.framework */; };
+		31D08E44194517C800780B0D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D08E43194517C800780B0D /* CoreGraphics.framework */; };
+		31D08E46194517C800780B0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D08E45194517C800780B0D /* UIKit.framework */; };
+		31D08E4C194517C800780B0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31D08E4A194517C800780B0D /* InfoPlist.strings */; };
+		31D08E4E194517C800780B0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D08E4D194517C800780B0D /* main.m */; };
+		31D08E52194517C800780B0D /* GCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D08E51194517C800780B0D /* GCAppDelegate.m */; };
+		31D08E55194517C800780B0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31D08E53194517C800780B0D /* Main.storyboard */; };
+		31D08E5A194517C800780B0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31D08E59194517C800780B0D /* Images.xcassets */; };
+		31D08E61194517C800780B0D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D08E60194517C800780B0D /* XCTest.framework */; };
+		31D08E62194517C800780B0D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D08E41194517C800780B0D /* Foundation.framework */; };
+		31D08E63194517C800780B0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31D08E45194517C800780B0D /* UIKit.framework */; };
+		31D08E6B194517C800780B0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 31D08E69194517C800780B0D /* InfoPlist.strings */; };
+		31D08E6D194517C800780B0D /* GCFinalGradeCalculator_Grade_CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D08E6C194517C800780B0D /* GCFinalGradeCalculator_Grade_CalculatorTests.m */; };
+		31D08E781945180200780B0D /* GCFinalGradeCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 31D08E771945180200780B0D /* GCFinalGradeCalculator.m */; };
+		C73574ECA04E40AF98F671A1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB178B3DADE0430881EB38B8 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31D08E64194517C800780B0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31D08E36194517C800780B0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 31D08E3D194517C800780B0D;
+			remoteInfo = "Grade Calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2DE8DBE3A8FE42B6BD2399C8 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		3149DB9F1957FDAF0029B331 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = "Grade Calculator/Resources/Settings.bundle"; sourceTree = SOURCE_ROOT; };
+		319DFF1419C6C54100EB1F4F /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		31BB59AD19492AC20085B7A7 /* GCWeightedFinalExamForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCWeightedFinalExamForm.h; path = Forms/GCWeightedFinalExamForm.h; sourceTree = "<group>"; };
+		31BB59AE19492AC20085B7A7 /* GCWeightedFinalExamForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCWeightedFinalExamForm.m; path = Forms/GCWeightedFinalExamForm.m; sourceTree = "<group>"; };
+		31BB59B1194935A70085B7A7 /* CustomButtonCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomButtonCell.h; sourceTree = "<group>"; };
+		31BB59B2194935A70085B7A7 /* CustomButtonCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomButtonCell.m; sourceTree = "<group>"; };
+		31BB59B3194935A70085B7A7 /* CustomButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomButtonCell.xib; sourceTree = "<group>"; };
+		31BB59B7194936390085B7A7 /* GCWeightedFinalExamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCWeightedFinalExamViewController.h; sourceTree = "<group>"; };
+		31BB59B8194936390085B7A7 /* GCWeightedFinalExamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCWeightedFinalExamViewController.m; sourceTree = "<group>"; };
+		31BB59BB194940B00085B7A7 /* GCWeightedAssignmentForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCWeightedAssignmentForm.h; sourceTree = "<group>"; };
+		31BB59BC194940B00085B7A7 /* GCWeightedAssignmentForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCWeightedAssignmentForm.m; sourceTree = "<group>"; };
+		31BB59BF194942C10085B7A7 /* GCWeightedAssignmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCWeightedAssignmentViewController.h; sourceTree = "<group>"; };
+		31BB59C0194942C10085B7A7 /* GCWeightedAssignmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCWeightedAssignmentViewController.m; sourceTree = "<group>"; };
+		31BB59C3194956060085B7A7 /* GCUnweightedAssignmentForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCUnweightedAssignmentForm.h; path = Forms/GCUnweightedAssignmentForm.h; sourceTree = "<group>"; };
+		31BB59C4194956060085B7A7 /* GCUnweightedAssignmentForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCUnweightedAssignmentForm.m; path = Forms/GCUnweightedAssignmentForm.m; sourceTree = "<group>"; };
+		31BB59C6194957920085B7A7 /* GCUnweightedAssignmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCUnweightedAssignmentViewController.h; sourceTree = "<group>"; };
+		31BB59C7194957920085B7A7 /* GCUnweightedAssignmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCUnweightedAssignmentViewController.m; sourceTree = "<group>"; };
+		31BB59CC194B7A4B0085B7A7 /* GCCalcFinalWeightForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCCalcFinalWeightForm.h; path = Forms/GCCalcFinalWeightForm.h; sourceTree = "<group>"; };
+		31BB59CD194B7A4B0085B7A7 /* GCCalcFinalWeightForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCCalcFinalWeightForm.m; path = Forms/GCCalcFinalWeightForm.m; sourceTree = "<group>"; };
+		31BB59D0194B7AE80085B7A7 /* GCCalcFinalWeightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCCalcFinalWeightViewController.h; sourceTree = "<group>"; };
+		31BB59D1194B7AE80085B7A7 /* GCCalcFinalWeightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCCalcFinalWeightViewController.m; sourceTree = "<group>"; };
+		31BB59D9194BC1AF0085B7A7 /* GCUserGradeAfterFinalForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCUserGradeAfterFinalForm.h; path = Forms/GCUserGradeAfterFinalForm.h; sourceTree = "<group>"; };
+		31BB59DA194BC1AF0085B7A7 /* GCUserGradeAfterFinalForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCUserGradeAfterFinalForm.m; path = Forms/GCUserGradeAfterFinalForm.m; sourceTree = "<group>"; };
+		31BB59DE194BC3040085B7A7 /* GCPostFinalGradeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCPostFinalGradeViewController.h; sourceTree = "<group>"; };
+		31BB59DF194BC3040085B7A7 /* GCPostFinalGradeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCPostFinalGradeViewController.m; sourceTree = "<group>"; };
+		31BB59E2194C257C0085B7A7 /* GCMultipartFinalForm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCMultipartFinalForm.h; path = Forms/GCMultipartFinalForm.h; sourceTree = "<group>"; };
+		31BB59E3194C257C0085B7A7 /* GCMultipartFinalForm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCMultipartFinalForm.m; path = Forms/GCMultipartFinalForm.m; sourceTree = "<group>"; };
+		31BB59E6194CD6310085B7A7 /* GCMultipartfinalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCMultipartfinalViewController.h; sourceTree = "<group>"; };
+		31BB59E7194CD6310085B7A7 /* GCMultipartfinalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCMultipartfinalViewController.m; sourceTree = "<group>"; };
+		31D08E3E194517C800780B0D /* Grade Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Grade Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D08E41194517C800780B0D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		31D08E43194517C800780B0D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		31D08E45194517C800780B0D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		31D08E49194517C800780B0D /* Grade Calculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Grade Calculator-Info.plist"; sourceTree = "<group>"; };
+		31D08E4B194517C800780B0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31D08E4D194517C800780B0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		31D08E4F194517C800780B0D /* Grade Calculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Grade Calculator-Prefix.pch"; sourceTree = "<group>"; };
+		31D08E50194517C800780B0D /* GCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCAppDelegate.h; sourceTree = "<group>"; };
+		31D08E51194517C800780B0D /* GCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCAppDelegate.m; sourceTree = "<group>"; };
+		31D08E54194517C800780B0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31D08E59194517C800780B0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		31D08E5F194517C800780B0D /* Grade CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Grade CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		31D08E60194517C800780B0D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		31D08E68194517C800780B0D /* GradesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GradesTests-Info.plist"; sourceTree = "<group>"; };
+		31D08E6A194517C800780B0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		31D08E6C194517C800780B0D /* GCFinalGradeCalculator_Grade_CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCFinalGradeCalculator_Grade_CalculatorTests.m; sourceTree = "<group>"; };
+		31D08E761945180200780B0D /* GCFinalGradeCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GCFinalGradeCalculator.h; path = FinalGradeCalculator/GCFinalGradeCalculator.h; sourceTree = "<group>"; };
+		31D08E771945180200780B0D /* GCFinalGradeCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GCFinalGradeCalculator.m; path = FinalGradeCalculator/GCFinalGradeCalculator.m; sourceTree = "<group>"; };
+		BB178B3DADE0430881EB38B8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		31D08E3B194517C800780B0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D08E44194517C800780B0D /* CoreGraphics.framework in Frameworks */,
+				319DFF1519C6C54100EB1F4F /* Crashlytics.framework in Frameworks */,
+				31D08E46194517C800780B0D /* UIKit.framework in Frameworks */,
+				31D08E42194517C800780B0D /* Foundation.framework in Frameworks */,
+				C73574ECA04E40AF98F671A1 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31D08E5C194517C800780B0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D08E61194517C800780B0D /* XCTest.framework in Frameworks */,
+				31D08E63194517C800780B0D /* UIKit.framework in Frameworks */,
+				31D08E62194517C800780B0D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		31BB59AC194929420085B7A7 /* Forms */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59E1194C255A0085B7A7 /* Multi-part final */,
+				31BB59CB194B7A330085B7A7 /* Calculate Final Weight */,
+				31BB59BE194940B40085B7A7 /* Weighted Assignment */,
+				31BB59B019492AC70085B7A7 /* Weighted Final Exam */,
+				31BB59C91949593C0085B7A7 /* Unweighted Assignment */,
+				31BB59DC194BC2DC0085B7A7 /* Post-final Grade */,
+			);
+			name = Forms;
+			sourceTree = "<group>";
+		};
+		31BB59B019492AC70085B7A7 /* Weighted Final Exam */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59AD19492AC20085B7A7 /* GCWeightedFinalExamForm.h */,
+				31BB59AE19492AC20085B7A7 /* GCWeightedFinalExamForm.m */,
+			);
+			name = "Weighted Final Exam";
+			sourceTree = "<group>";
+		};
+		31BB59B6194935AC0085B7A7 /* Submit Button */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59B1194935A70085B7A7 /* CustomButtonCell.h */,
+				31BB59B2194935A70085B7A7 /* CustomButtonCell.m */,
+				31BB59B3194935A70085B7A7 /* CustomButtonCell.xib */,
+			);
+			name = "Submit Button";
+			sourceTree = "<group>";
+		};
+		31BB59BA194940650085B7A7 /* Weighted Final Form */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59B7194936390085B7A7 /* GCWeightedFinalExamViewController.h */,
+				31BB59B8194936390085B7A7 /* GCWeightedFinalExamViewController.m */,
+			);
+			name = "Weighted Final Form";
+			sourceTree = "<group>";
+		};
+		31BB59BE194940B40085B7A7 /* Weighted Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59BB194940B00085B7A7 /* GCWeightedAssignmentForm.h */,
+				31BB59BC194940B00085B7A7 /* GCWeightedAssignmentForm.m */,
+			);
+			name = "Weighted Assignment";
+			sourceTree = "<group>";
+		};
+		31BB59C2194955990085B7A7 /* Weighted Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59BF194942C10085B7A7 /* GCWeightedAssignmentViewController.h */,
+				31BB59C0194942C10085B7A7 /* GCWeightedAssignmentViewController.m */,
+			);
+			name = "Weighted Assignment";
+			sourceTree = "<group>";
+		};
+		31BB59C91949593C0085B7A7 /* Unweighted Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59C3194956060085B7A7 /* GCUnweightedAssignmentForm.h */,
+				31BB59C4194956060085B7A7 /* GCUnweightedAssignmentForm.m */,
+			);
+			name = "Unweighted Assignment";
+			sourceTree = "<group>";
+		};
+		31BB59CA194959470085B7A7 /* Unweighted Assignment */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59C6194957920085B7A7 /* GCUnweightedAssignmentViewController.h */,
+				31BB59C7194957920085B7A7 /* GCUnweightedAssignmentViewController.m */,
+			);
+			name = "Unweighted Assignment";
+			sourceTree = "<group>";
+		};
+		31BB59CB194B7A330085B7A7 /* Calculate Final Weight */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59CC194B7A4B0085B7A7 /* GCCalcFinalWeightForm.h */,
+				31BB59CD194B7A4B0085B7A7 /* GCCalcFinalWeightForm.m */,
+			);
+			name = "Calculate Final Weight";
+			sourceTree = "<group>";
+		};
+		31BB59CF194B7ACD0085B7A7 /* Calc Final Weight */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59D0194B7AE80085B7A7 /* GCCalcFinalWeightViewController.h */,
+				31BB59D1194B7AE80085B7A7 /* GCCalcFinalWeightViewController.m */,
+			);
+			name = "Calc Final Weight";
+			sourceTree = "<group>";
+		};
+		31BB59DC194BC2DC0085B7A7 /* Post-final Grade */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59D9194BC1AF0085B7A7 /* GCUserGradeAfterFinalForm.h */,
+				31BB59DA194BC1AF0085B7A7 /* GCUserGradeAfterFinalForm.m */,
+			);
+			name = "Post-final Grade";
+			sourceTree = "<group>";
+		};
+		31BB59DD194BC2EF0085B7A7 /* Post-final Grade */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59DE194BC3040085B7A7 /* GCPostFinalGradeViewController.h */,
+				31BB59DF194BC3040085B7A7 /* GCPostFinalGradeViewController.m */,
+			);
+			name = "Post-final Grade";
+			sourceTree = "<group>";
+		};
+		31BB59E1194C255A0085B7A7 /* Multi-part final */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59E2194C257C0085B7A7 /* GCMultipartFinalForm.h */,
+				31BB59E3194C257C0085B7A7 /* GCMultipartFinalForm.m */,
+			);
+			name = "Multi-part final";
+			sourceTree = "<group>";
+		};
+		31BB59E5194CD6210085B7A7 /* Multi-part final */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59E6194CD6310085B7A7 /* GCMultipartfinalViewController.h */,
+				31BB59E7194CD6310085B7A7 /* GCMultipartfinalViewController.m */,
+			);
+			name = "Multi-part final";
+			sourceTree = "<group>";
+		};
+		31D08E35194517C800780B0D = {
+			isa = PBXGroup;
+			children = (
+				31D08E47194517C800780B0D /* Grade Calculator */,
+				31D08E66194517C800780B0D /* Grade CalculatorTests */,
+				31D08E40194517C800780B0D /* Frameworks */,
+				31D08E3F194517C800780B0D /* Products */,
+				2DE8DBE3A8FE42B6BD2399C8 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		31D08E3F194517C800780B0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31D08E3E194517C800780B0D /* Grade Calculator.app */,
+				31D08E5F194517C800780B0D /* Grade CalculatorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		31D08E40194517C800780B0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				319DFF1419C6C54100EB1F4F /* Crashlytics.framework */,
+				31D08E41194517C800780B0D /* Foundation.framework */,
+				31D08E43194517C800780B0D /* CoreGraphics.framework */,
+				31D08E45194517C800780B0D /* UIKit.framework */,
+				31D08E60194517C800780B0D /* XCTest.framework */,
+				BB178B3DADE0430881EB38B8 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		31D08E47194517C800780B0D /* Grade Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				31D08E53194517C800780B0D /* Main.storyboard */,
+				31D08E791945180600780B0D /* Model */,
+				31D08E7B1945399C00780B0D /* App Delegate */,
+				31D08E7C194539A200780B0D /* View Controllers */,
+				31BB59B6194935AC0085B7A7 /* Submit Button */,
+				31D08E59194517C800780B0D /* Images.xcassets */,
+				31D08E48194517C800780B0D /* Supporting Files */,
+			);
+			path = "Grade Calculator";
+			sourceTree = "<group>";
+		};
+		31D08E48194517C800780B0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3149DB9F1957FDAF0029B331 /* Settings.bundle */,
+				31D08E49194517C800780B0D /* Grade Calculator-Info.plist */,
+				31D08E4A194517C800780B0D /* InfoPlist.strings */,
+				31D08E4D194517C800780B0D /* main.m */,
+				31D08E4F194517C800780B0D /* Grade Calculator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31D08E66194517C800780B0D /* Grade CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				31D08E6C194517C800780B0D /* GCFinalGradeCalculator_Grade_CalculatorTests.m */,
+				31D08E67194517C800780B0D /* Supporting Files */,
+			);
+			path = "Grade CalculatorTests";
+			sourceTree = "<group>";
+		};
+		31D08E67194517C800780B0D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				31D08E68194517C800780B0D /* GradesTests-Info.plist */,
+				31D08E69194517C800780B0D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		31D08E791945180600780B0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59AC194929420085B7A7 /* Forms */,
+				31D08E7A1945180B00780B0D /* Final Grade Calculator */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		31D08E7A1945180B00780B0D /* Final Grade Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				31D08E761945180200780B0D /* GCFinalGradeCalculator.h */,
+				31D08E771945180200780B0D /* GCFinalGradeCalculator.m */,
+			);
+			name = "Final Grade Calculator";
+			sourceTree = "<group>";
+		};
+		31D08E7B1945399C00780B0D /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				31D08E50194517C800780B0D /* GCAppDelegate.h */,
+				31D08E51194517C800780B0D /* GCAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		31D08E7C194539A200780B0D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				31BB59E5194CD6210085B7A7 /* Multi-part final */,
+				31BB59DD194BC2EF0085B7A7 /* Post-final Grade */,
+				31BB59CF194B7ACD0085B7A7 /* Calc Final Weight */,
+				31BB59CA194959470085B7A7 /* Unweighted Assignment */,
+				31BB59BA194940650085B7A7 /* Weighted Final Form */,
+				31BB59C2194955990085B7A7 /* Weighted Assignment */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		31D08E3D194517C800780B0D /* Grade Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31D08E70194517C800780B0D /* Build configuration list for PBXNativeTarget "Grade Calculator" */;
+			buildPhases = (
+				04585C95DACD45B1AE58042E /* Check Pods Manifest.lock */,
+				31D08E3A194517C800780B0D /* Sources */,
+				31D08E3B194517C800780B0D /* Frameworks */,
+				31D08E3C194517C800780B0D /* Resources */,
+				4FBA6BE3062A4446B0A7D7D5 /* Copy Pods Resources */,
+				319DFF1319C6C51900EB1F4F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Grade Calculator";
+			productName = "Grade Calculator";
+			productReference = 31D08E3E194517C800780B0D /* Grade Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		31D08E5E194517C800780B0D /* Grade CalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 31D08E73194517C800780B0D /* Build configuration list for PBXNativeTarget "Grade CalculatorTests" */;
+			buildPhases = (
+				31D08E5B194517C800780B0D /* Sources */,
+				31D08E5C194517C800780B0D /* Frameworks */,
+				31D08E5D194517C800780B0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				31D08E65194517C800780B0D /* PBXTargetDependency */,
+			);
+			name = "Grade CalculatorTests";
+			productName = "Grade CalculatorTests";
+			productReference = 31D08E5F194517C800780B0D /* Grade CalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		31D08E36194517C800780B0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Nikhil Kalra";
+				TargetAttributes = {
+					31D08E3D194517C800780B0D = {
+						DevelopmentTeam = 9AZP8K6D3X;
+					};
+					31D08E5E194517C800780B0D = {
+						TestTargetID = 31D08E3D194517C800780B0D;
+					};
+				};
+			};
+			buildConfigurationList = 31D08E39194517C800780B0D /* Build configuration list for PBXProject "Grade Calculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 31D08E35194517C800780B0D;
+			productRefGroup = 31D08E3F194517C800780B0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				31D08E3D194517C800780B0D /* Grade Calculator */,
+				31D08E5E194517C800780B0D /* Grade CalculatorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		31D08E3C194517C800780B0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31BB59B5194935A70085B7A7 /* CustomButtonCell.xib in Resources */,
+				31D08E5A194517C800780B0D /* Images.xcassets in Resources */,
+				3149DBA01957FDAF0029B331 /* Settings.bundle in Resources */,
+				31D08E4C194517C800780B0D /* InfoPlist.strings in Resources */,
+				31D08E55194517C800780B0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31D08E5D194517C800780B0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D08E6B194517C800780B0D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		04585C95DACD45B1AE58042E /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		319DFF1319C6C51900EB1F4F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Crashlytics.framework/run 99b82f0ed7be62e35eacbeabbd9531fe090ee5bc 8333eb3081301cb8fad85834d34999d2309e9d9c9044fda1e2e4f378ef99018b";
+		};
+		4FBA6BE3062A4446B0A7D7D5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		31D08E3A194517C800780B0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31BB59AF19492AC20085B7A7 /* GCWeightedFinalExamForm.m in Sources */,
+				31BB59B4194935A70085B7A7 /* CustomButtonCell.m in Sources */,
+				31BB59B9194936390085B7A7 /* GCWeightedFinalExamViewController.m in Sources */,
+				31BB59E8194CD6310085B7A7 /* GCMultipartfinalViewController.m in Sources */,
+				31D08E781945180200780B0D /* GCFinalGradeCalculator.m in Sources */,
+				31BB59D2194B7AE80085B7A7 /* GCCalcFinalWeightViewController.m in Sources */,
+				31D08E52194517C800780B0D /* GCAppDelegate.m in Sources */,
+				31BB59C8194957920085B7A7 /* GCUnweightedAssignmentViewController.m in Sources */,
+				31BB59BD194940B00085B7A7 /* GCWeightedAssignmentForm.m in Sources */,
+				31BB59DB194BC1AF0085B7A7 /* GCUserGradeAfterFinalForm.m in Sources */,
+				31BB59CE194B7A4B0085B7A7 /* GCCalcFinalWeightForm.m in Sources */,
+				31BB59C1194942C10085B7A7 /* GCWeightedAssignmentViewController.m in Sources */,
+				31BB59E4194C257C0085B7A7 /* GCMultipartFinalForm.m in Sources */,
+				31D08E4E194517C800780B0D /* main.m in Sources */,
+				31BB59E0194BC3040085B7A7 /* GCPostFinalGradeViewController.m in Sources */,
+				31BB59C5194956060085B7A7 /* GCUnweightedAssignmentForm.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		31D08E5B194517C800780B0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31D08E6D194517C800780B0D /* GCFinalGradeCalculator_Grade_CalculatorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		31D08E65194517C800780B0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 31D08E3D194517C800780B0D /* Grade Calculator */;
+			targetProxy = 31D08E64194517C800780B0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		31D08E4A194517C800780B0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31D08E4B194517C800780B0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		31D08E53194517C800780B0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31D08E54194517C800780B0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		31D08E69194517C800780B0D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				31D08E6A194517C800780B0D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		31D08E6E194517C800780B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		31D08E6F194517C800780B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		31D08E71194517C800780B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE8DBE3A8FE42B6BD2399C8 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Grade Calculator/Grade Calculator-Prefix.pch";
+				INFOPLIST_FILE = "Grade Calculator/Grade Calculator-Info.plist";
+				PRODUCT_NAME = "Grade Calculator";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		31D08E72194517C800780B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DE8DBE3A8FE42B6BD2399C8 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Grade Calculator/Grade Calculator-Prefix.pch";
+				INFOPLIST_FILE = "Grade Calculator/Grade Calculator-Info.plist";
+				PRODUCT_NAME = "Grade Calculator";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		31D08E74194517C800780B0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Grade Calculator.app/Grade Calculator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Grade Calculator/Grade Calculator-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Grade CalculatorTests/GradesTests-Info.plist";
+				PRODUCT_NAME = "Grade CalculatorTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		31D08E75194517C800780B0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Grade Calculator.app/Grade Calculator";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Grade Calculator/Grade Calculator-Prefix.pch";
+				INFOPLIST_FILE = "Grade CalculatorTests/GradesTests-Info.plist";
+				PRODUCT_NAME = "Grade CalculatorTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		31D08E39194517C800780B0D /* Build configuration list for PBXProject "Grade Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31D08E6E194517C800780B0D /* Debug */,
+				31D08E6F194517C800780B0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31D08E70194517C800780B0D /* Build configuration list for PBXNativeTarget "Grade Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31D08E71194517C800780B0D /* Debug */,
+				31D08E72194517C800780B0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		31D08E73194517C800780B0D /* Build configuration list for PBXNativeTarget "Grade CalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31D08E74194517C800780B0D /* Debug */,
+				31D08E75194517C800780B0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 31D08E36194517C800780B0D /* Project object */;
+}
