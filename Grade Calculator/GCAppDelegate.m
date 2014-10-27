@@ -15,7 +15,8 @@
 {
     // Override point for customization after application launch.
     
-    [Crashlytics startWithAPIKey:@"99b82f0ed7be62e35eacbeabbd9531fe090ee5bc"];
+#warning Enter your Crashlytics API Key here
+//    [Crashlytics startWithAPIKey:YOUR API KEY];
     
     return YES;
 }

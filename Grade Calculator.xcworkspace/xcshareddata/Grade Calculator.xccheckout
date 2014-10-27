@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>00CC82FA-5936-411F-B992-A55F7B200B1D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Grade Calculator</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>085EC3F4C725B55C8BEAABEB1F40117B6BEE7465</key>
+		<string>https://github.com/thefirstnikhil/gradesapp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Grade Calculator.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>085EC3F4C725B55C8BEAABEB1F40117B6BEE7465</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/thefirstnikhil/gradesapp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>085EC3F4C725B55C8BEAABEB1F40117B6BEE7465</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>085EC3F4C725B55C8BEAABEB1F40117B6BEE7465</string>
+			<key>IDESourceControlWCCName</key>
+			<string>gradesapp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
