@@ -8,12 +8,12 @@ FXForms is an Objective-C library for easily creating table-based forms on iOS. 
 
 Unlike other solutions, FXForms works directly with strongly-typed data models that you supply (instead of dictionaries or complicated dataSource protocols), and infers as much information as possible from your models using introspection, to avoid the need for tedious duplication of type information.
 
-![Screenshot of BasicExample](https://raw.github.com/nicklockwood/FXForms/1.0.2/Examples/BasicExample/Screenshot.png)
+![Screenshot of BasicExample](https://raw.github.com/nicklockwood/FXForms/1.2.3/Examples/BasicExample/Screenshot.png)
 
 Supported iOS & SDK Versions
 -----------------------------
 
-* Supported build target - iOS 7.1 (Xcode 5.1)
+* Supported build target - iOS 8.1 (Xcode 6.1, Apple LLVM compiler 6.0)
 * Earliest supported deployment target - iOS 5.0
 * Earliest compatible deployment target - iOS 5.0
 
@@ -165,7 +165,7 @@ Alternatively, you can return a dictionary in the `-fields` array instead of a s
 {
     return @[
              @{FXFormFieldKey: @"email", FXFormFieldTitle: @"Email Address"},
-             …other fields…
+             ...other fields...
             ];
 }
 ```
@@ -199,7 +199,7 @@ Similarly, if you only want to display a subset of the form object's properties 
 Grouping fields
 ---------------------
 
-You may wish to group your form fields into sections in the form to make it ease to use. FXForms handles grouping in a very simple way - you just add an `FXFormFieldHeader` or `FXFormFieldFooter` attribute to any field and it will start/end the section at that point. The `FXFormFieldHeader/Footer` is a string that will be displayed as the header or footer text for the section. If you don't want any text, just supply an empty string.
+You may wish to group your form fields into sections in the form to make it ease to use. FXForms handles grouping in a very simple way - you just add an `FXFormFieldHeader` or `FXFormFieldFooter` attribute to any field and it will start/end the section at that point. The `FXFormFieldHeader/Footer` can be either a string that will be displayed as the header or footer text for the section, or a custom UIView instance or subclass. If you don't want a header or footer, just supply an empty string or `NSNull` value.
 
 In the following example, we have four fields, and we've split them into two groups, each with a header:
 
@@ -301,7 +301,7 @@ Sometimes the value you wish to display for a field may not match the value you 
 static NSString *const FXFormFieldAction = @"action";
 ```
     
-This is an optional action to be performed by the field. The value can be either a string representing the name of a selector, or a block, and will be executed when the field is activated. If the action is specified as a selector, the target is determined by cascading up the responder chain from the cell until an object is encountered that responds to it. That means that you could choose to implement this action method on the tableview, it's superview, the view controller, the app delegate, or even the window. If your form is presented as a subform of another form, you can also implement actions methods for subforms in the view controller for their parent form.
+This is an optional action to be performed by the field. The value can be either a string representing the name of a selector, or a block, and will be executed when the field is activated. If the action is specified as a selector, the target is determined by cascading up the responder chain from the cell until an object is encountered that responds to it. That means that you could choose to implement this action method on the tableview, its superview, the view controller, the app delegate, or even the window. If your form is presented as a subform of another form, you can also implement actions methods for subforms in the view controller for their parent form.
 
 For non-interactive fields, the action will be called when the cell is selected; for fields such as switches or textfields, it will fire when the value is changed. When using a selector, the action method can accept either zero or one argument. The argument supplied will be the sender, which is typically a form field cell, (a `UITableViewCell` conforming to the `FXFormFieldCell` protocol), from which you can access the field model, and from that the form itself.
 
@@ -318,13 +318,13 @@ If the FXFormFieldSegue property is a segue instance or identifier, it will be i
 static NSString *const FXFormFieldHeader = @"header";
 ```
     
-This property provides an optional section header string to display before the field. Supply an empty string to create a section partition without a title.
+This property provides an optional section header to display before the field. The value can be either a string or a UIView instance or subclass (or a string containing the name of a UIView subclass). The height of the header will be inferred from the view, or you can override it using the UITableViewDelegate. By default, its value will be inferred automatically for subforms based on the name of the subform property. Supply an empty string or `NSNull` value to create a section partition without a title.
     
 ```objc
 static NSString *const FXFormFieldFooter = @"footer";
 ```
     
-This property provides an optional section footer string to display after the field. Supply an empty string to create a section partition without a footer.
+This property provides an optional section footer string to display after the field. The value can be either a string or a UIView instance or subclass (or a string containing the name of a UIView subclass). The height of the footer will be inferred from the view, or you can override it using the UITableViewDelegate. Supply an empty string or `NSNull` value to create a section partition without a footer, or just omit the `FXFormFieldFooter` key altogether.
     
 ```objc
 static NSString *const FXFormFieldInline = @"inline";
@@ -342,7 +342,7 @@ Fields of type NSArray or NSOrderedSet can optionally display sorting controls s
 static NSString *const FXFormFieldViewController = @"controller";
 ```
 
-Some types of field may be displayed in another view controller, which will be pushed onto the navigation stack when the field is selected. By default this class is not specified on the field-level; instead, the `FXFormController` maintains a map of fields types to controller classes, which allows you to override the default controller used to display a given field type on a per-form level rather than having to do it per-field. If you *do* need to provide a special one-off controller type, the FXFormFieldViewController property lets you specify the controller to be used on a per-field basis. The controller specified must conform to the `FXFormFieldViewController` protocol. By default, such fields will be displayed using the `FXFormViewController` class.
+Some types of field may be displayed in another view controller, which will be pushed onto the navigation stack when the field is selected. By default this class is not specified on the field-level; instead, the `FXFormController` maintains a map of fields types to controller classes, which allows you to override the default controller used to display a given field type on a per-form level rather than having to do it per-field. If you *do* need to provide a special one-off controller type, the FXFormFieldViewController property lets you specify the controller to be used on a per-field basis. `FXFormViewController` can be either a `UIViewController` instance or class (or a string containing the name of a class). The controller specified must conform to the `FXFormFieldViewController` protocol. By default, such fields will be displayed using the `FXFormViewController` class.
 
 
 Form field types
@@ -516,11 +516,11 @@ FXForms provides default cell implementations for all supported fields. You may 
 
 There are two levels of customisation possible for cells. The simplest option is to subclass one of the existing `FXFormCell` classes, which all inherit from `FXFormBaseCell`. These cell classes contain a lot of logic for handling the various different field types, but also expose the views and controls used, for easy customisation.
 
-When subclassing an existing cell type, you can override the `setUp`, `update` and `didSelectWithTableView:controller:` methods (optionally calling [super …] if you want to inherit the original cell's behaviors). The `setUp` method will be called once when the cell is created, and the `update` method will be called each time the field value is updated.
+When subclassing an existing cell type, you can override the `setUp`, `update` and `didSelectWithTableView:controller:` methods (optionally calling [super ...] if you want to inherit the original cell's behaviors). The `setUp` method will be called once when the cell is created, and the `update` method will be called each time the field value is updated.
 
 If you already have a base cell class and don't want to base your cells on `FXFormBaseCell`, you can create an FXForms-compatible cell from scratch by subclassing `UITableViewCell` and adopting the `FXFormFieldCell` protocol.
 
-Your custom cell must have a property called field, of type `FXFormField`. `FXFormField` is a wrapper class used to encapsulate the properties of a field, and also provides a way to set and get the associated form value (via the field.value virtual property). You cannot instantiate `FXFormField` objects directly, however they can be accessed and enumerated via methods on the `FXFormController`.
+Your custom cell must have a property called field, of type `FXFormField`. `FXFormField` is a wrapper class used to encapsulate the properties of a field, and also provides a way to set and get the associated form value (via the `field.value` virtual property). You cannot instantiate `FXFormField` objects directly, however they can be accessed and enumerated via methods on the `FXFormController`.
 
 Once you have created your custom cell, you can use it as follows:
 
@@ -529,11 +529,71 @@ Once you have created your custom cell, you can use it as follows:
 * If your cell is designed to handle a particular field value class (or subclass), you can tell the formController to use your custom cell class for a particular value class using the `-registerCellClass:forFieldClass:` method of FXFormController.
 * If you want to completely replace all cells with your own classes, use the `-registerDefaultFieldCellClass:` method of `FXFormController`. This replaces all default cell associations for all field types with your new cell class. You can then use `-registerCellClass:forFieldType:` to add additional cell classes for specific types.
 
+ 
+Swift Compatibility
+--------------------
+
+FXForms is fully compatible with Swift, with the following caveats:
+
+* Your forms objects must inherit from `NSObject`, or de declared using the `@objc` qualifier.
+* For collection fields, you must use `NSArray`, `NSDictionary`, `NSOrderedSet`, etc. Swift's strongly typed collections won't work.
+* If your form objects are declared in a different module to your main app, FXForm's field value class inference may not work correctly, in which case you can explicitly specify the field class by adding the following method to your form object for each field that doesn't work:
+
+```swift
+func fieldThatDoesntWorkField() -> NSDictionary {
+    return [FXFormFieldClass: fieldThatDoesntWork.dynamicType]
+}
+```
+
 
 Release notes
 --------------
 
-Version 1.2 beta
+Version 1.2.9
+
+- Cells defined using nibs now infer their height form the nib unless overridden
+- Option picker can now be dismissed by tapping field again, like date picker
+ 
+Version 1.2.8
+ 
+- Fixed incorrect type inference for fields with a segue property
+- Date picker can now be dismissed by tapping date field again
+ 
+Version 1.2.7
+ 
+- Fixed bug where button-type fields (ones with an action but no editable value) were not correctly inferred
+ 
+Version 1.2.6
+ 
+- Improved `valueClass` inference, especially for template fields
+- `FXFormImagePickerCell` now lets you select camera or photo library
+ 
+Version 1.2.5
+ 
+- Fixed crash when form section has a footer but no header
+ 
+Version 1.2.4
+ 
+- `hash`, `description`, etc. no longer show up on iOS7 for builds built with the 8.1 SDK
+- `FXFormViewController` can now be either a view controller class or instance
+ 
+Version 1.2.3
+
+- Added a fix when using Swift to allow FXForms to automatically infer the types of forms and controllers, as it can with Objective-C
+- Now throws an exception if you try to present a subform when not embedded inside a UINavigationController
+
+Version 1.2.2
+ 
+- Fixed bug where subforms would be overwritten by a new instance
+ 
+Version 1.2.1
+ 
+- Fixed issue where table footer spacing would incorrectly be shown even when no footer text was set
+- Fixed crash relating to the use of default values
+- Made a small compatibility fix for Swift
+- Added Swift example project
+ 
+Version 1.2
 
 - Collection fields types, such as NSArray, NSSet, NSOrderedSet, etc. can now be edited by adding, removing and sorting items
 - Exposed the setUp and update methods of FXFormsBaseCell for simpler subclassing
@@ -556,6 +616,7 @@ Version 1.2 beta
 - Textfield form values are now updated live during editing
 - Added -excludedFields method for excluding certain fields from form
 - Now ignores standard @properties such as `hash` and `description`, introduced in iOS 8
+- You can now use a UIView class or instance as the value for FXFormFieldHeader/Footer
 
 Version 1.1.6
 

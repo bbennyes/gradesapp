@@ -1,10 +1,10 @@
 PODS:
-  - FXForms (HEAD based on 1.1.6)
+  - FXForms (HEAD based on 1.2.9)
 
 DEPENDENCIES:
   - FXForms (HEAD)
 
 SPEC CHECKSUMS:
-  FXForms: 9387c60ee6f3e1c75e0f8998012acc1ce0ad8d0a
+  FXForms: dd42cbb090e9db2f69d8f2920b99bf88f6933552
 
-COCOAPODS: 0.33.1
+COCOAPODS: 0.34.4

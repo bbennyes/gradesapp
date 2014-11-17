@@ -1,13 +1,11 @@
 # Acknowledgements
-This application uses icons from icons8 (http://icons8.com).
-
 This application makes use of the following third party libraries:
 
 ## FXForms
 
 FXForms
 
-version 1.2, May 26th, 2014
+version 1.2.9, November 7th, 2014
 
 Copyright (C) 2014 Charcoal Design
 
